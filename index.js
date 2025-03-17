@@ -6,30 +6,30 @@ class heroi {
         this.nameHero = nameHero
         this.ageHero = ageHero
         this.typeHero = typeHero
-        this.heroAtack = this.atack (typeHero)
+        this.heroAttack = this.attack (typeHero)
     }
 
     writeGretting(){
         console.log(`OLá, ${this.nameHero}!`)
     }
-    writeAtack(){
-        console.log(`O ${this.typeHero} atacou usando ${this.heroAtack}!`)
+    writeAttack(){
+        console.log(`O ${this.typeHero} atacou usando ${this.heroAttack}!`)
     }
 
-    atack(type){
-        let heroAtack
+    attack(type){
+        let heroAttack
         if(type === "Guerreiro"){
-            heroAtack = "espada"
+            heroAttack = "espada"
         }else if(type === "Mago"){
-            heroAtack = "magia"
+            heroAttack = "magia"
         }else if(type === "Ninja"){
-            heroAtack = "shuriken"
+            heroAttack = "shuriken"
         }else if(type === "Monge"){
-            heroAtack = "artes marciais"
+            heroAttack = "artes marciais"
         }else{
             return "Digite corretamente o Tipo ho Herói"
         }
-        return heroAtack
+        return heroAttack
     }
 
 
@@ -39,4 +39,4 @@ class heroi {
     let heroInformations = new heroi("Tzu", "22", "Ninja")
 
     heroInformations.writeGretting()
-    heroInformations.writeAtack()
+    heroInformations.writeAttack()
